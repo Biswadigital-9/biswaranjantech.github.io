@@ -2,337 +2,988 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
 
-    <title>BISWARANJAN TECH - IT Student Learning Hub</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-    <link rel="stylesheet" href="style.css">
+  <meta
+    name="description"
+    content="BISWARANJAN TECH - IT Student Learning Hub"
+  >
+
+  <title>
+    BISWARANJAN TECH | IT Student Learning Hub
+  </title>
+
+  <!-- CSS -->
+  <link
+    rel="stylesheet"
+    href="public/style.css"
+  >
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+  <!-- =====================================
+       NAVBAR
+  ====================================== -->
 
-    <header class="topbar">
+  <header class="navbar">
 
-        <div class="brand">
-            <h2>⚡ BISWARANJAN TECH</h2>
-            <p>IT Student Learning Hub</p>
-        </div>
+    <div class="container navbar-container">
 
-        <div class="top-actions">
-            <button id="themeBtn">🌙</button>
-            <button id="logoutBtn" class="danger hidden">
-                Logout
-            </button>
-        </div>
+      <a
+        href="#"
+        class="logo"
+      >
+        BISWARANJAN <span>TECH</span>
+      </a>
 
-    </header>
+      <nav>
+        <ul class="nav-menu">
 
+          <li>
+            <a href="#home">
+              Home
+            </a>
+          </li>
 
-    <!-- ================= MAIN ================= -->
+          <li>
+            <a href="#notes">
+              Notes
+            </a>
+          </li>
 
-    <main class="container">
+          <li>
+            <a href="#coding">
+              Coding
+            </a>
+          </li>
 
+          <li>
+            <a href="#practical">
+              Practical
+            </a>
+          </li>
 
-        <!-- ================= AUTH SECTION ================= -->
+          <li>
+            <a href="#question-bank">
+              Question Bank
+            </a>
+          </li>
 
-        <section id="authView" class="auth-grid">
-
-
-            <!-- HERO -->
-
-            <div class="hero">
-
-                <p class="eyebrow">
-                    GOVERNMENT POLYTECHNIC BHUBANESWAR • IT
-                </p>
-
-                <h1>
-                    Learn. Practice. Build. 🚀
-                </h1>
-
-                <p>
-                    Notes, practicals, coding, computer fundamentals,
-                    cybersecurity, projects, question bank and college
-                    resources — everything in one place.
-                </p>
-
-                <div class="chips">
-
-                    <span>📚 Notes</span>
-
-                    <span>🧪 Practicals</span>
-
-                    <span>💻 Coding</span>
-
-                    <span>🔐 Cybersecurity</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- ================= REGISTER ================= -->
-
-            <div class="card" id="registerCard">
-
-                <h2>
-                    Create Student Account
-                </h2>
-
-                <form id="registerForm">
-
-                    <input
-                        type="text"
-                        name="fullName"
-                        placeholder="Full Name"
-                        required
-                    >
-
-                    <input
-                        type="text"
-                        name="mobile"
-                        placeholder="Mobile Number"
-                        inputmode="numeric"
-                        required
-                    >
-
-                    <input
-                        type="text"
-                        name="qualification"
-                        placeholder="Qualification"
-                        required
-                    >
-
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Email ID"
-                        required
-                    >
-
-                    <input
-                        type="password"
-                        name="password"
-                        placeholder="Password"
-                        required
-                    >
-
-                    <button
-                        type="submit"
-                        class="primary"
-                    >
-                        Send OTP
-                    </button>
-
-                </form>
-
-                <p id="regMsg" class="msg"></p>
-
-            </div>
-
-
-            <!-- ================= OTP ================= -->
-
-            <div
-                class="card hidden"
-                id="otpCard"
+          <li>
+            <button
+              id="darkModeBtn"
+              class="btn btn-secondary"
+              type="button"
             >
+              🌙
+            </button>
+          </li>
 
-                <h2>
-                    📧 Verify Email
-                </h2>
+        </ul>
+      </nav>
 
-                <p>
-                    Enter the 6-digit OTP sent to your email.
-                </p>
+    </div>
 
-                <input
-                    id="otpInput"
-                    type="text"
-                    maxlength="6"
-                    inputmode="numeric"
-                    placeholder="123456"
-                >
-
-                <button
-                    id="verifyOtpBtn"
-                    class="primary"
-                >
-                    Verify OTP
-                </button>
-
-                <button
-                    id="resendBtn"
-                    class="secondary"
-                    disabled
-                >
-                    Resend OTP
-                    <span id="timer"></span>
-                </button>
-
-                <p
-                    id="otpMsg"
-                    class="msg"
-                ></p>
-
-            </div>
+  </header>
 
 
-            <!-- ================= LOGIN ================= -->
+  <!-- =====================================
+       HOME / HERO
+  ====================================== -->
 
-            <div class="card" id="loginCard">
+  <main>
 
-                <h2>
-                    🔐 Student Login
-                </h2>
+    <section
+      id="home"
+      class="hero"
+    >
 
-                <form id="loginForm">
+      <div class="container hero-content">
 
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Email ID"
-                        required
-                    >
+        <div>
 
-                    <input
-                        type="password"
-                        name="password"
-                        placeholder="Password"
-                        required
-                    >
+          <h1>
+            Learn.
+            <span>Build.</span>
+            Grow.
+          </h1>
 
-                    <button
-                        type="submit"
-                        class="primary"
-                    >
-                        Login
-                    </button>
+          <p>
+            Welcome to BISWARANJAN TECH —
+            your IT Student Learning Hub for
+            notes, practicals, coding,
+            cybersecurity, projects and
+            question banks.
+          </p>
 
-                </form>
+          <div class="hero-buttons">
 
-                <p
-                    id="loginMsg"
-                    class="msg"
-                ></p>
+            <button
+              class="btn btn-primary"
+              onclick="showRegisterSection()"
+            >
+              🚀 Get Started
+            </button>
 
-            </div>
+            <button
+              class="btn btn-secondary"
+              onclick="showLoginSection()"
+            >
+              🔐 Login
+            </button>
 
-        </section>
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <h2>
+            🎓 IT Student Hub
+          </h2>
+
+          <p>
+            Everything you need for your
+            diploma IT learning journey
+            in one place.
+          </p>
+
+          <br>
+
+          <p>
+            📚 Notes<br>
+            💻 Coding<br>
+            🧪 Practicals<br>
+            🔐 Cybersecurity<br>
+            🚀 Projects
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
 
 
-        <!-- ================= DASHBOARD ================= -->
+    <!-- =====================================
+         AUTHENTICATION
+    ====================================== -->
 
-        <section
-            id="dashboard"
-            class="hidden"
+    <section
+      class="auth-wrapper"
+      id="authentication"
+    >
+
+      <!-- LOGIN -->
+
+      <div
+        id="loginSection"
+        class="auth-card"
+      >
+
+        <h2>
+          🔐 Student Login
+        </h2>
+
+        <p class="subtitle">
+          Login to your BISWARANJAN TECH account
+        </p>
+
+        <div class="form-group">
+
+          <label for="loginEmail">
+            Email ID
+          </label>
+
+          <input
+            type="email"
+            id="loginEmail"
+            class="form-control"
+            placeholder="Enter your email"
+            autocomplete="email"
+          >
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="loginPassword">
+            Password
+          </label>
+
+          <input
+            type="password"
+            id="loginPassword"
+            class="form-control"
+            placeholder="Enter your password"
+            autocomplete="current-password"
+          >
+
+        </div>
+
+        <button
+          id="loginBtn"
+          class="btn btn-primary"
+          style="width:100%"
+          type="button"
         >
+          Login
+        </button>
 
-            <div class="dash-head">
+        <div class="auth-footer">
 
-                <div>
+          Don't have an account?
 
-                    <p class="eyebrow">
-                        STUDENT DASHBOARD
-                    </p>
+          <a
+            href="javascript:void(0)"
+            id="showRegisterBtn"
+          >
+            Register
+          </a>
 
-                    <h1>
-                        Welcome,
-                        <span id="studentName">
-                            Student
-                        </span>
-                        👋
-                    </h1>
+        </div>
 
-                    <p id="studentInfo"></p>
+      </div>
 
-                </div>
 
-                <div class="profile-mini">
-                    🎓 IT Student
-                </div>
+      <!-- REGISTER -->
+
+      <div
+        id="registerSection"
+        class="auth-card"
+        style="display:none"
+      >
+
+        <h2>
+          📝 Registration
+        </h2>
+
+        <p class="subtitle">
+          Create your student account
+        </p>
+
+        <div class="form-group">
+
+          <label for="fullName">
+            Full Name
+          </label>
+
+          <input
+            type="text"
+            id="fullName"
+            class="form-control"
+            placeholder="Enter your full name"
+            autocomplete="name"
+          >
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="mobile">
+            Mobile Number
+          </label>
+
+          <input
+            type="tel"
+            id="mobile"
+            class="form-control"
+            placeholder="Enter mobile number"
+            maxlength="10"
+            autocomplete="tel"
+          >
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="qualification">
+            Qualification
+          </label>
+
+          <input
+            type="text"
+            id="qualification"
+            class="form-control"
+            placeholder="Example: Diploma in IT"
+          >
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="registerEmail">
+            Email ID
+          </label>
+
+          <input
+            type="email"
+            id="registerEmail"
+            class="form-control"
+            placeholder="Enter email"
+            autocomplete="email"
+          >
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="registerPassword">
+            Password
+          </label>
+
+          <input
+            type="password"
+            id="registerPassword"
+            class="form-control"
+            placeholder="Minimum 6 characters"
+            autocomplete="new-password"
+          >
+
+        </div>
+
+        <button
+          id="registerBtn"
+          class="btn btn-primary"
+          style="width:100%"
+          type="button"
+        >
+          Register & Send OTP
+        </button>
+
+        <div class="auth-footer">
+
+          Already have an account?
+
+          <a
+            href="javascript:void(0)"
+            id="showLoginBtn"
+          >
+            Login
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- OTP -->
+
+      <div
+        id="otpSection"
+        class="auth-card"
+        style="display:none"
+      >
+
+        <h2>
+          📧 Verify Email
+        </h2>
+
+        <p class="subtitle">
+          Enter the 6-digit OTP sent to your email.
+        </p>
+
+        <div class="form-group">
+
+          <label for="otp">
+            OTP
+          </label>
+
+          <input
+            type="text"
+            id="otp"
+            class="form-control otp-input"
+            placeholder="000000"
+            maxlength="6"
+            inputmode="numeric"
+            autocomplete="one-time-code"
+          >
+
+        </div>
+
+        <button
+          id="verifyOTPBtn"
+          class="btn btn-success"
+          style="width:100%"
+          type="button"
+        >
+          Verify OTP
+        </button>
+
+        <div class="resend-area">
+
+          <button
+            id="resendOTPBtn"
+            type="button"
+            disabled
+          >
+            Resend OTP (30s)
+          </button>
+
+        </div>
+
+        <div class="auth-footer">
+
+          <a
+            href="javascript:void(0)"
+            onclick="showRegisterSection()"
+          >
+            ← Back to Registration
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         DASHBOARD
+    ====================================== -->
+
+    <section
+      id="dashboardSection"
+      class="dashboard"
+      style="display:none"
+    >
+
+      <div class="container">
+
+        <div class="dashboard-header">
+
+          <div>
+
+            <h1>
+              Welcome,
+              <span id="welcomeName">
+                Student
+              </span> 👋
+            </h1>
+
+            <p>
+              Continue your IT learning journey.
+            </p>
+
+          </div>
+
+          <button
+            id="logoutBtn"
+            class="btn btn-danger"
+            type="button"
+          >
+            Logout
+          </button>
+
+        </div>
+
+
+        <!-- STATS -->
+
+        <div class="dashboard-grid">
+
+          <div class="stat-card">
+
+            <div class="number">
+              7
+            </div>
+
+            <p>
+              1st Year Subjects
+            </p>
+
+          </div>
+
+          <div class="stat-card">
+
+            <div class="number">
+              8+
+            </div>
+
+            <p>
+              Practical Areas
+            </p>
+
+          </div>
+
+          <div class="stat-card">
+
+            <div class="number">
+              6+
+            </div>
+
+            <p>
+              Coding Languages
+            </p>
+
+          </div>
+
+          <div class="stat-card">
+
+            <div class="number">
+              0%
+            </div>
+
+            <p>
+              Learning Progress
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <section class="section">
+
+          <div class="section-title">
+
+            <h2>
+              👤 My Profile
+            </h2>
+
+          </div>
+
+          <div class="card profile-card">
+
+            <div class="profile-row">
+
+              <span class="profile-label">
+                Full Name
+              </span>
+
+              <span
+                class="profile-value"
+                id="profileName"
+              >
+                -
+              </span>
 
             </div>
 
+            <div class="profile-row">
 
-            <!-- STATISTICS -->
+              <span class="profile-label">
+                Email
+              </span>
 
-            <div class="stats">
-
-                <div>
-                    <b>7</b>
-                    <span>1st Year Theory</span>
-                </div>
-
-                <div>
-                    <b>9</b>
-                    <span>Practical Areas</span>
-                </div>
-
-                <div>
-                    <b>8+</b>
-                    <span>Coding Tracks</span>
-                </div>
-
-                <div>
-                    <b>100%</b>
-                    <span>Learning Hub</span>
-                </div>
+              <span
+                class="profile-value"
+                id="profileEmail"
+              >
+                -
+              </span>
 
             </div>
 
+            <div class="profile-row">
 
-            <!-- RESOURCE CARDS -->
+              <span class="profile-label">
+                Mobile
+              </span>
 
-            <div
-                class="section-grid"
-                id="resourceGrid"
-            ></div>
-
-
-            <!-- OFFICIAL LINKS -->
-
-            <div class="links-row">
-
-                <a
-                    href="https://sctevt.odisha.gov.in/"
-                    target="_blank"
-                >
-                    🏛️ Official SCTEVT Odisha
-                </a>
-
-                <a
-                    href="https://gpbhubaneswar.in/"
-                    target="_blank"
-                >
-                    🏫 Government Polytechnic Bhubaneswar
-                </a>
+              <span
+                class="profile-value"
+                id="profileMobile"
+              >
+                -
+              </span>
 
             </div>
+
+            <div class="profile-row">
+
+              <span class="profile-label">
+                Qualification
+              </span>
+
+              <span
+                class="profile-value"
+                id="profileQualification"
+              >
+                -
+              </span>
+
+            </div>
+
+          </div>
 
         </section>
 
-    </main>
+
+        <!-- QUICK ACCESS -->
+
+        <section class="section">
+
+          <div class="section-title">
+
+            <h2>
+              ⚡ Quick Access
+            </h2>
+
+            <p>
+              Start learning from any section.
+            </p>
+
+          </div>
+
+          <div class="resource-grid">
+
+            <div class="resource-card">
+
+              <div class="resource-icon">
+                📚
+              </div>
+
+              <h3>
+                1st Year Notes
+              </h3>
+
+              <p>
+                Subject-wise notes and study materials.
+              </p>
+
+              <a
+                href="#notes"
+                class="btn btn-primary"
+              >
+                Open Notes
+              </a>
+
+            </div>
 
 
-    <!-- ================= FOOTER ================= -->
+            <div class="resource-card">
 
-    <footer>
+              <div class="resource-icon">
+                🧪
+              </div>
 
-        © 2026 BISWARANJAN TECH
+              <h3>
+                Practical Notes
+              </h3>
 
-        <br>
+              <p>
+                Aim, theory, procedure, observation,
+                result and viva.
+              </p>
 
-        Built for IT Student Learning 🚀
+              <a
+                href="#practical"
+                class="btn btn-primary"
+              >
+                Practicals
+              </a>
 
-    </footer>
+            </div>
 
 
-    <script src="app.js"></script>
+            <div class="resource-card">
 
-</body>
+              <div class="resource-icon">
+                💻
+              </div>
 
-</html>
+              <h3>
+                Coding
+              </h3>
+
+              <p>
+                HTML, CSS, JavaScript, C, C++,
+                Python and more.
+              </p>
+
+              <a
+                href="#coding"
+                class="btn btn-primary"
+              >
+                Start Coding
+              </a>
+
+            </div>
+
+
+            <div class="resource-card">
+
+              <div class="resource-icon">
+                🔐
+              </div>
+
+              <h3>
+                Cybersecurity
+              </h3>
+
+              <p>
+                Networking, Linux, web security
+                and ethical hacking concepts.
+              </p>
+
+              <a
+                href="#cybersecurity"
+                class="btn btn-primary"
+              >
+                Learn Security
+              </a>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         NOTES
+    ====================================== -->
+
+    <section
+      id="notes"
+      class="section"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>
+            📚 1st Year Notes
+          </h2>
+
+          <p>
+            Subject-wise learning materials
+          </p>
+
+        </div>
+
+        <div class="resource-grid">
+
+          <div class="resource-card">
+            <div class="resource-icon">📐</div>
+            <h3>Mathematics</h3>
+            <p>Engineering Mathematics notes and practice.</p>
+            <button class="btn btn-primary">
+              Coming Soon
+            </button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">⚛️</div>
+            <h3>Applied Physics</h3>
+            <p>Physics theory, numericals and important questions.</p>
+            <button class="btn btn-primary">
+              Coming Soon
+            </button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🧪</div>
+            <h3>Chemistry & Environment</h3>
+            <p>Chemistry and environmental science materials.</p>
+            <button class="btn btn-primary">
+              Coming Soon
+            </button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">💻</div>
+            <h3>Fundamentals of Computing & AI</h3>
+            <p>Computer fundamentals, Python and AI basics.</p>
+            <button class="btn btn-primary">
+              Coming Soon
+            </button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">⚡</div>
+            <h3>Electrical & Electronics</h3>
+            <p>Electrical and electronics engineering notes.</p>
+            <button class="btn btn-primary">
+              Coming Soon
+            </button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">⚙️</div>
+            <h3>Engineering Mechanics</h3>
+            <p>Mechanics concepts, formulas and problems.</p>
+            <button class="btn btn-primary">
+              Coming Soon
+            </button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🗣️</div>
+            <h3>Communication Skills</h3>
+            <p>English communication and language skills.</p>
+            <button class="btn btn-primary">
+              Coming Soon
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         PRACTICAL
+    ====================================== -->
+
+    <section
+      id="practical"
+      class="section"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>
+            🧪 Practical Notes
+          </h2>
+
+          <p>
+            Complete practical preparation
+          </p>
+
+        </div>
+
+        <div class="resource-grid">
+
+          <div class="resource-card">
+            <div class="resource-icon">⚛️</div>
+            <h3>Physics Lab</h3>
+            <p>Aim, requirements, theory, procedure, observation and result.</p>
+            <button class="btn btn-primary">Coming Soon</button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🧪</div>
+            <h3>Chemistry Lab</h3>
+            <p>Experiments and viva preparation.</p>
+            <button class="btn btn-primary">Coming Soon</button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">💻</div>
+            <h3>Computing & AI Lab</h3>
+            <p>Programming practicals and Python exercises.</p>
+            <button class="btn btn-primary">Coming Soon</button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">⚡</div>
+            <h3>Electrical Lab</h3>
+            <p>Electrical and electronics practicals.</p>
+            <button class="btn btn-primary">Coming Soon</button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🔧</div>
+            <h3>Workshop</h3>
+            <p>Engineering workshop practical preparation.</p>
+            <button class="btn btn-primary">Coming Soon</button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">📐</div>
+            <h3>Engineering Graphics</h3>
+            <p>Graphics concepts and practice materials.</p>
+            <button class="btn btn-primary">Coming Soon</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         CODING
+    ====================================== -->
+
+    <section
+      id="coding"
+      class="section"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>
+            💻 Coding Learning
+          </h2>
+
+          <p>
+            Build your programming skills
+          </p>
+
+        </div>
+
+        <div class="resource-grid">
+
+          <div class="resource-card">
+            <div class="resource-icon">🌐</div>
+            <h3>HTML</h3>
+            <p>Learn web page structure from basics.</p>
+            <button class="btn btn-primary">Learn</button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🎨</div>
+            <h3>CSS</h3>
+            <p>Design modern and responsive websites.</p>
+            <button class="btn btn-primary">Learn</button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">⚡</div>
+            <h3>JavaScript</h3>
+            <p>Add functionality and interactivity.</p>
+            <button class="btn btn-primary">Learn</button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">©️</div>
+            <h3>C Programming</h3>
+            <p>Master programming fundamentals.</p>
+            <button class="btn btn-primary">Learn</button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🐍</div>
+            <h3>Python</h3>
+            <p>Programming, automation and AI basics.</p>
+            <button class="btn btn-primary">Learn</button>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🚀</div>
+            <h3>Mini Projects</h3>
+            <p>Practice by building real projects.</p>
+            <button class="btn btn-primary">Projects</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+              
